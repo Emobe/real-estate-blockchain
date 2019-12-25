@@ -1,0 +1,21 @@
+{
+  "name": "real-estate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "networks.js",
+  "scripts": {
+    "create-deed": "oz create > ./addresses/deed",
+    "test": "npx mocha --exit --recursive test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts-ethereum-package": "^2.4.0",
+    "@openzeppelin/upgrades": "^2.6.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.1",
+    "@openzeppelin/test-helpers": "^0.5.4",
+    "truffle": "^5.1.5"
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "contracts": {
+    "Deed": {
+      "address": "0x630589690929E9cdEFDeF0734717a9eF3Ec7Fcfe",
+      "constructorCode": "60806040527322d491bde2303f2f43325b2108d26f1eaba1e32b6101a060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550613f8c806100696000396000f3fe",
+      "bodyBytecodeHash": "d8c1d5e3dab22e88f86a7519aeb41e470073ee58b1685e0ef44cc1991f898e19",
+      "localBytecodeHash": "4275a55d681fab18cc9de8d352b6d1c2bfae01b9551c17f3a5a0f3ec15ec50b3",
+      "deployedBytecodeHash": "4275a55d681fab18cc9de8d352b6d1c2bfae01b9551c17f3a5a0f3ec15ec50b3",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_address>": {
+          "id": "t_mapping<t_address>",
+          "valueType": "t_address",
+          "label": "mapping(key => address)",
+          "kind": "mapping"
+        },
+        "t_struct<Counters.Counter>": {
+          "id": "t_struct<Counters.Counter>",
+          "kind": "struct",
+          "label": "Counters.Counter",
+          "members": [
+            {
+              "label": "_value",
+              "astId": 241,
+              "type": "t_uint256",
+              "src": "1024:14:3"
+            }
+          ]
+        },
+        "t_mapping<t_struct<Counters.Counter>>": {
+          "id": "t_mapping<t_struct<Counters.Counter>>",
+          "valueType": "t_struct<Counters.Counter>",
+          "label": "mapping(key => Counters.Counter)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_uint256>": {
+          "id": "t_array:dyn<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "dyn",
+          "kind": "array",
+          "label": "uint256[]"
+        },
+        "t_mapping<t_array:dyn<t_uint256>>": {
+          "id": "t_mapping<t_array:dyn<t_uint256>>",
+          "valueType": "t_array:dyn<t_uint256>",
+          "label": "mapping(key => uint256[])",
+          "kind": "mapping"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_string>": {
+          "id": "t_mapping<t_string>",
+          "valueType": "t_string",
+          "label": "mapping(key => string)",
+          "kind": "mapping"
+        },
+        "t_struct<Roles.Role>": {
+          "id": "t_struct<Roles.Role>",
+          "kind": "struct",
+          "label": "Roles.Role",
+          "members": [
+            {
+              "label": "bearer",
+              "astId": 35,
+              "type": "t_mapping<t_bool>",
+              "src": "150:32:1"
+            }
+          ]
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 2095,
+          "type": "t_bool",
+          "src": "757:24:17"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 2097,
+          "type": "t_bool",
+          "src": "876:25:17"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 2153,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:17"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "_supportedInterfaces",
+          "astId": 297,
+          "type": "t_mapping<t_bool>",
+          "src": "565:52:4"
+        },
+        {
+          "contract": "ERC165",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/introspection/ERC165.sol",
+          "label": "______gap",
+          "astId": 342,
+          "type": "t_array:50<t_uint256>",
+          "src": "1729:29:4"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenOwner",
+          "astId": 574,
+          "type": "t_mapping<t_address>",
+          "src": "886:48:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_tokenApprovals",
+          "astId": 578,
+          "type": "t_mapping<t_address>",
+          "src": "990:52:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_ownedTokensCount",
+          "astId": 582,
+          "type": "t_mapping<t_struct<Counters.Counter>>",
+          "src": "1100:63:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "_operatorApprovals",
+          "astId": 588,
+          "type": "t_mapping<t_bool>",
+          "src": "1218:73:7"
+        },
+        {
+          "contract": "ERC721",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+          "label": "______gap",
+          "astId": 1200,
+          "type": "t_array:50<t_uint256>",
+          "src": "15262:29:7"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokens",
+          "astId": 1223,
+          "type": "t_mapping<t_array:dyn<t_uint256>>",
+          "src": "502:50:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_ownedTokensIndex",
+          "astId": 1227,
+          "type": "t_mapping<t_uint256>",
+          "src": "622:53:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokens",
+          "astId": 1230,
+          "type": "t_array:dyn<t_uint256>",
+          "src": "736:28:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "_allTokensIndex",
+          "astId": 1234,
+          "type": "t_mapping<t_uint256>",
+          "src": "835:51:8"
+        },
+        {
+          "contract": "ERC721Enumerable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Enumerable.sol",
+          "label": "______gap",
+          "astId": 1565,
+          "type": "t_array:50<t_uint256>",
+          "src": "9053:29:8"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_name",
+          "astId": 1604,
+          "type": "t_string",
+          "src": "323:20:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_symbol",
+          "astId": 1606,
+          "type": "t_string",
+          "src": "370:22:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "_tokenURIs",
+          "astId": 1610,
+          "type": "t_mapping<t_string>",
+          "src": "438:45:10"
+        },
+        {
+          "contract": "ERC721Metadata",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Metadata.sol",
+          "label": "______gap",
+          "astId": 1741,
+          "type": "t_array:50<t_uint256>",
+          "src": "3086:29:10"
+        },
+        {
+          "contract": "ERC721Full",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Full.sol",
+          "label": "______gap",
+          "astId": 1584,
+          "type": "t_array:50<t_uint256>",
+          "src": "532:29:9"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "_minters",
+          "astId": 132,
+          "type": "t_struct<Roles.Role>",
+          "src": "327:27:2"
+        },
+        {
+          "contract": "MinterRole",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+          "label": "______gap",
+          "astId": 232,
+          "type": "t_array:50<t_uint256>",
+          "src": "1193:29:2"
+        },
+        {
+          "contract": "ERC721Mintable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721Mintable.sol",
+          "label": "______gap",
+          "astId": 1837,
+          "type": "t_array:50<t_uint256>",
+          "src": "1687:29:11"
+        },
+        {
+          "contract": "Deed",
+          "path": "contracts/Deed.sol",
+          "label": "_estateAgents",
+          "astId": 2175,
+          "type": "t_struct<Roles.Role>",
+          "src": "561:32:18"
+        },
+        {
+          "contract": "Deed",
+          "path": "contracts/Deed.sol",
+          "label": "_deedIds",
+          "astId": 2177,
+          "type": "t_struct<Counters.Counter>",
+          "src": "597:33:18"
+        },
+        {
+          "contract": "Deed",
+          "path": "contracts/Deed.sol",
+          "label": "_vault",
+          "astId": 2180,
+          "type": "t_address",
+          "src": "634:66:18"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": true,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [
+          {
+            "contract": "ERC721",
+            "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC721/ERC721.sol",
+            "label": "_ownedTokensCount",
+            "astId": 582,
+            "type": "t_mapping<t_struct<Counters.Counter>>",
+            "src": "1100:63:7"
+          },
+          {
+            "contract": "MinterRole",
+            "path": "@openzeppelin/contracts-ethereum-package/contracts/access/roles/MinterRole.sol",
+            "label": "_minters",
+            "astId": 132,
+            "type": "t_struct<Roles.Role>",
+            "src": "327:27:2"
+          },
+          {
+            "contract": "Deed",
+            "path": "contracts/Deed.sol",
+            "label": "_estateAgents",
+            "astId": 2175,
+            "type": "t_struct<Roles.Role>",
+            "src": "561:32:18"
+          },
+          {
+            "contract": "Deed",
+            "path": "contracts/Deed.sol",
+            "label": "_deedIds",
+            "astId": 2177,
+            "type": "t_struct<Counters.Counter>",
+            "src": "597:33:18"
+          }
+        ],
+        "storageDiff": []
+      }
+    },
+    "EstateAgent": {
+      "address": "0x0E696947A06550DEf604e82C26fd9E493e576337",
+      "constructorCode": "60806040526040516100109061007f565b604051809103906000f08015801561002c573d6000803e3d6000fd5b50603360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555034801561007957600080fd5b5061008c565b613ff58061038383390190565b6102e88061009b6000396000f3fe",
+      "bodyBytecodeHash": "c278761a53080545f6348e40030c57c01900ae85074cb6f1eebd16062cf5fcaa",
+      "localBytecodeHash": "3e1fff3a61368375ac4e95562b835a637e3b6c05485c0f31f0b8ca2e452d174e",
+      "deployedBytecodeHash": "3e1fff3a61368375ac4e95562b835a637e3b6c05485c0f31f0b8ca2e452d174e",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 2095,
+          "type": "t_bool",
+          "src": "757:24:17"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 2097,
+          "type": "t_bool",
+          "src": "876:25:17"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 2153,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:17"
+        },
+        {
+          "contract": "EstateAgent",
+          "path": "contracts/EstateAgent.sol",
+          "label": "deed",
+          "astId": 2349,
+          "type": "t_address",
+          "src": "152:29:19"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": true,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "real-estate/EstateAgent": [
+      {
+        "address": "0x26b4AFb60d6C903165150C6F0AA14F8016bE4aec",
+        "version": "1.0.0",
+        "implementation": "0x0E696947A06550DEf604e82C26fd9E493e576337",
+        "admin": "0xA57B8a5584442B467b4689F1144D269d096A3daF",
+        "kind": "Upgradeable"
+      }
+    ],
+    "real-estate/Deed": [
+      {
+        "address": "0xA94B7f0465E98609391C623d0560C5720a3f2D33",
+        "version": "1.0.0",
+        "implementation": "0x630589690929E9cdEFDeF0734717a9eF3Ec7Fcfe",
+        "admin": "0xA57B8a5584442B467b4689F1144D269d096A3daF",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "dependencies": {
+    "@openzeppelin/contracts-ethereum-package": {
+      "package": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "version": "2.4.0",
+      "customDeploy": true
+    }
+  },
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0xA57B8a5584442B467b4689F1144D269d096A3daF"
+  }
+}
